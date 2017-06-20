@@ -1,0 +1,32 @@
+{
+  "name": "trosjs",
+  "version": "0.0.0-development",
+  "description": "A toolset of sorting algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrsteele/trosjs.git"
+  },
+  "keywords": [
+    "sorting",
+    "algorithm",
+    "bubble",
+    "insertion",
+    "selection",
+    "merge",
+    "heap"
+  ],
+  "author": "Matt Steele <matt@omnionline.us> (http://omnionline.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrsteele/trosjs/issues"
+  },
+  "homepage": "https://github.com/mrsteele/trosjs#readme",
+  "devDependencies": {
+    "semantic-release": "^6.3.6"
+  }
+}
