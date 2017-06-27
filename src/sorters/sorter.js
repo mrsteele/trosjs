@@ -1,9 +1,14 @@
 class Sorter {
   constructor (tros) {
     this.tros = tros
+    this.finished = []
   }
 
-  step () {
+  nextStep () {
+
+  }
+
+  next () {
     // run the step
     const step = this.nextStep()
     if (step) {
@@ -23,7 +28,7 @@ class Sorter {
     const length = this.tros.length
     // console.log('GOING FOR: ', length)
     do {
-      this.step()
+      this.next()
       // console.log(`finished: ${this.finished.length}`)
     } while (length !== this.finished.length)
 

@@ -1,10 +1,11 @@
-import { Bubble } from './sorters'
+import * as Sorters from './sorters'
 const defaultSort = (a, b) => a - b
 
 class Tors {
   constructor (arr = []) {
     // a local reference to everything that is in our array
     this.raw = arr
+    this.sorter = new Sorters.Sorter(this)
 
     this.reset()
   }
@@ -26,14 +27,14 @@ class Tors {
 
   bubble (fn = defaultSort) {
     this.reset()
-    this.sorter = new Bubble(this)
+    this.sorter = new Sorters.Bubble(this)
 
-    // reset config with bubble sort
     return this
   }
 
   insertion (fn = defaultSort) {
-    // reset config with insertion sort
+    this.reset()
+    this.sorter = new Sorters.Insertion(this)
     return this
   }
 
@@ -42,8 +43,8 @@ class Tors {
     return this
   }
 
-  step () {
-    this.sorter.step()
+  next () {
+    this.sorter.next()
     return this
   }
 

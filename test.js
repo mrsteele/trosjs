@@ -7,7 +7,7 @@ const t = tors(arr)
 
 // t.bubble().step().step().step().step().step().step().step()
 
-t.bubble().sort()
+t.insertion().sort()
 
 /*
 {
